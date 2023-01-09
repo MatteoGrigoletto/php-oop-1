@@ -15,12 +15,17 @@ require  __DIR__ . '/classes/movieClass.php'
 <body>
     <div class="container">
         <h1>Lista film</h1>
-            <?php
-
+        <ul class="section-film">
+            <li>TITLE</li>
+            <li>DURATE</li>
+            <li>PUBLICATION</li>
+            <li>MOVIEYEARS</li>
+        </ul>
+        <?php
         for($i = 0; $i < count($films) ; $i++) {
             $film= new movie($films[$i]['name'],$films[$i]['duration'],$films[$i]['adult'],$films[$i]['publication']);
         ?>
-        <ul>
+        <ul class="info-film">
             <li><?php echo $film->getTitle() ?></li>
             <li><?php echo $film->durate ?></li>
             <li><?php echo $film->yearPublication ?></li>

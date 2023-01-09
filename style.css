@@ -18,13 +18,20 @@ h1 {
   color: white;
   font-size: 4rem;
 }
+.section-film li {
+  background-color: rgb(251, 29, 136);
+  width: 25%;
+  color: white;
+  font-size: 2rem;
+  font-weight: bolder;
+}
 ul {
   list-style: none;
   display: flex;
   justify-content: center;
   width: 100%;
 }
-li {
+.info-film li {
   font-weight: bold;
   background-color: rgb(176, 91, 131);
   width: 25%;
