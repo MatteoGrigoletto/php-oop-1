@@ -16,12 +16,12 @@
     public function getTitle(){
     return $this->title;
 }
-    public function __construct($_title, $_durate, $_forAdult, $_yearPublication){
+    public function __construct($_arr){
         
-        $this->title = $_title;
-        $this->durate = $_durate;
-        $this->forAdult = $_forAdult;
-        $this->yearPublication = $_yearPublication;
+        $this->title = $_arr['name'];
+        $this->durate = $_arr['duration'];
+        $this->forAdult = $_arr['adult'];
+        $this->yearPublication = $_arr['publication'];
         $this->calcMovieYears($this->yearPublication);
     }
 };

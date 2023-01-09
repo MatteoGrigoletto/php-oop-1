@@ -23,7 +23,7 @@ require  __DIR__ . '/classes/movieClass.php'
         </ul>
         <?php
         for($i = 0; $i < count($films) ; $i++) {
-            $film= new movie($films[$i]['name'],$films[$i]['duration'],$films[$i]['adult'],$films[$i]['publication']);
+            $film= new movie($films[$i]);
         ?>
         <ul class="info-film">
             <li><?php echo $film->getTitle() ?></li>
